@@ -28,7 +28,7 @@ public class LaptopController {
     @GetMapping("/")
     public ResponseEntity getU(){
         try {
-            return ResponseEntity.ok("Звязок встановленийжжж");
+            return ResponseEntity.ok("Звязок встановлений");
         } catch (Exception e)
         {
             return ResponseEntity.badRequest().body("От халепа)))");

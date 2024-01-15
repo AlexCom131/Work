@@ -1,11 +1,9 @@
 package com.example.lapshop.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name="laptop")
 public class LapTopEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +12,7 @@ public class LapTopEntity {
     private String model;
     private String prozessor;
     private int memory;
-    private int sizeDisplay;
+    private int sizedisplay;
 
     private String gpu;
 
@@ -28,7 +26,7 @@ public class LapTopEntity {
         this.model = model;
         this.prozessor = prozessor;
         this.memory = memory;
-        this.sizeDisplay = sizeDisplay;
+        this.sizedisplay = sizeDisplay;
         this.gpu = gpu;
         this.ozu = ozu;
     }
@@ -69,12 +67,12 @@ public class LapTopEntity {
         return this;
     }
 
-    public int getSizeDisplay() {
-        return sizeDisplay;
+    public int getSizedisplay() {
+        return sizedisplay;
     }
 
-    public LapTopEntity setSizeDisplay(int sizeDisplay) {
-        this.sizeDisplay = sizeDisplay;
+    public LapTopEntity setSizedisplay(int sizeDisplay) {
+        this.sizedisplay = sizeDisplay;
         return this;
     }
 
